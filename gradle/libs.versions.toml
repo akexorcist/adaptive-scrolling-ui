@@ -1,4 +1,8 @@
 [versions]
+compileSdk = "36"
+minSdk = "21"
+targetSdk = "36"
+
 agp = "9.0.1"
 kotlin = "2.3.10"
 compose-bom = "2026.02.00"
