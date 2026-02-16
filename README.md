@@ -1,8 +1,7 @@
 ![Android Kotlin](https://img.shields.io/badge/Android-Kotlin-6C3FD1.svg?style=flat&logo=android)
-![Minimum SDK Version](https://img.shields.io/badge/MinSdk-21-brightgreen)
-[![Maven Central](https://img.shields.io/maven-central/v/com.akexorcist/round-corner-progress-bar?color=brightgreen&label=Maven%20Central)](https://search.maven.org/artifact/com.akexorcist/round-corner-progress-bar)
-![Apache 2.0](https://img.shields.io/badge/License-Apache%202-brightgreen)
-[![Workflow Status](https://github.com/akexorcist/adaptive-scrolling-ui/actions/workflows/android.yml/badge.svg)](https://github.com/akexorcist/adaptive-scrolling-ui/actions)
+![Minimum SDK Version](https://img.shields.io/badge/MinSdk-21-blue)
+[![Maven Central](https://img.shields.io/maven-central/v/com.akexorcist.adaptivescrolling/compose?color=blue&label=Maven%20Central)](https://central.sonatype.com/namespace/com.akexorcist.adaptivescrolling)
+![Apache 2.0](https://img.shields.io/badge/License-Apache%202-blue)
 
 # Adaptive Scrolling UI
 
