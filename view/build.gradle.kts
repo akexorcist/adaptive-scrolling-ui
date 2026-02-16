@@ -4,7 +4,7 @@ plugins {
 }
 
 android {
-    namespace = "dev.akexorcist.adaptivescrolling.view"
+    namespace = "com.akexorcist.adaptivescrolling.view"
     compileSdk {
         version = release(36)
     }

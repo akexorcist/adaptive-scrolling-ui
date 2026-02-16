@@ -4,13 +4,13 @@ plugins {
 }
 
 android {
-    namespace = "dev.akexorcist.adaptivescrollingui"
+    namespace = "com.akexorcist.adaptivescrollingui"
     compileSdk {
         version = release(36)
     }
 
     defaultConfig {
-        applicationId = "dev.akexorcist.adaptivescrollingui"
+        applicationId = "com.akexorcist.adaptivescrollingui"
         minSdk = 28
         targetSdk = 36
         versionCode = 1
@@ -42,10 +42,10 @@ kotlin {
 dependencies {
     debugImplementation(project(":compose"))
     //noinspection UseTomlInstead
-    releaseImplementation("dev.akexorcist.adaptivescrolling:compose:1.0.0-alpha01")
+    releaseImplementation("com.akexorcist.adaptivescrolling:compose:1.0.0-alpha01")
     debugImplementation(project(":view"))
     //noinspection UseTomlInstead
-    releaseImplementation("dev.akexorcist.adaptivescrolling:view:1.0.0-alpha01")
+    releaseImplementation("com.akexorcist.adaptivescrolling:view:1.0.0-alpha01")
     implementation(libs.androidx.core)
     implementation(libs.androidx.lifecycle.runtime)
     implementation(libs.appcompat)

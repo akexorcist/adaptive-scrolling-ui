@@ -1,4 +1,4 @@
-package dev.akexorcist.adaptivescrolling.compose
+package com.akexorcist.adaptivescrolling.compose
 
 import androidx.compose.foundation.ScrollState
 import androidx.compose.foundation.gestures.FlingBehavior
@@ -13,6 +13,22 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.layout.SubcomposeLayout
 import androidx.compose.ui.unit.Constraints
 
+/**
+ * A container that scrolls its content vertically when the content's height exceeds the container's height.
+ * The layout will not be scrollable if the content's height is less than or equal to the container's height.
+ *
+ * This is useful for creating layouts that adapt to different content sizes, avoiding unnecessary scrolling
+ * when the content fits within the available space.
+ *
+ * @param modifier The modifier to be applied to the layout.
+ * @param scrollState The state of the scroll.
+ * @param scrollEnabled Controls whether scrolling is enabled.
+ * @param flingBehavior The fling behavior to be used for scrolling.
+ * @param reverseScrolling `true` to reverse the direction of scrolling and layout, when `false` items will be composed from top to bottom and `scrollState` will increase when scrolling down.
+ * @param verticalArrangement The vertical arrangement of the layout's children.
+ * @param horizontalAlignment The horizontal alignment of the layout's children.
+ * @param content The content of the layout. The `isScrollable` parameter is a boolean that indicates whether the content is scrollable or not.
+ */
 @Composable
 fun AdaptiveScrollContainer(
     modifier: Modifier = Modifier,

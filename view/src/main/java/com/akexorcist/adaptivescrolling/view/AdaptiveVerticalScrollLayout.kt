@@ -1,4 +1,4 @@
-package dev.akexorcist.adaptivescrolling.view
+package com.akexorcist.adaptivescrolling.view
 
 import android.content.Context
 import android.util.AttributeSet

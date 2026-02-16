@@ -52,7 +52,7 @@ adaptiveVerticalScrollLayout.setOnScrollableStateChangeListener { isScrollable -
 ### XML
 
 ```xml
-<dev.akexorcist.adaptivescrolling.view.AdaptiveVerticalScrollLayout
+<com.akexorcist.adaptivescrolling.view.AdaptiveVerticalScrollLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
@@ -71,7 +71,7 @@ adaptiveVerticalScrollLayout.setOnScrollableStateChangeListener { isScrollable -
         android:layout_height="wrap_content"
         android:text="Click" />
 
-</dev.akexorcist.adaptivescrolling.view.AdaptiveVerticalScrollLayout>
+</com.akexorcist.adaptivescrolling.view.AdaptiveVerticalScrollLayout>
 ```
 
 ## License

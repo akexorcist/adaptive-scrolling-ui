@@ -11,7 +11,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AdaptiveScrollingUI">
         <activity
-            android:name=".ui.main.MainActivity"
+            android:name="com.akexorcist.adaptivescrollingui.ui.main.MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -20,22 +20,22 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".ui.compose.ComposeSimpleActivity"
+            android:name="com.akexorcist.adaptivescrollingui.ui.compose.ComposeSimpleActivity"
             android:exported="false" />
         <activity
-            android:name=".ui.compose.ComposeVerticalWeightActivity"
+            android:name="com.akexorcist.adaptivescrollingui.ui.compose.ComposeVerticalWeightActivity"
             android:exported="false" />
         <activity
-            android:name=".ui.compose.ComposeStickyFooterActivity"
+            android:name="com.akexorcist.adaptivescrollingui.ui.compose.ComposeStickyFooterActivity"
             android:exported="false" />
         <activity
-            android:name=".ui.view.ViewSimpleActivity"
+            android:name="com.akexorcist.adaptivescrollingui.ui.view.ViewSimpleActivity"
             android:exported="false" />
         <activity
-            android:name=".ui.view.ViewVerticalWeightActivity"
+            android:name="com.akexorcist.adaptivescrollingui.ui.view.ViewVerticalWeightActivity"
             android:exported="false" />
         <activity
-            android:name=".ui.view.ViewStickyFooterActivity"
+            android:name="com.akexorcist.adaptivescrollingui.ui.view.ViewStickyFooterActivity"
             android:exported="false" />
     </application>
 </manifest>

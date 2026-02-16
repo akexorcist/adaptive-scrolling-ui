@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <dev.akexorcist.adaptivescrolling.view.AdaptiveVerticalScrollLayout
+    <com.akexorcist.adaptivescrolling.view.AdaptiveVerticalScrollLayout
         android:id="@+id/adaptive_scroll"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -291,7 +291,7 @@
                 android:layout_width="0dp"
                 android:layout_height="64dp" />
         </LinearLayout>
-    </dev.akexorcist.adaptivescrolling.view.AdaptiveVerticalScrollLayout>
+    </com.akexorcist.adaptivescrolling.view.AdaptiveVerticalScrollLayout>
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/button_back"

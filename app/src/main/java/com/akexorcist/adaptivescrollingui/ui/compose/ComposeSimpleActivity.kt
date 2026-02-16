@@ -1,4 +1,4 @@
-package dev.akexorcist.adaptivescrollingui.ui.compose
+package com.akexorcist.adaptivescrollingui.ui.compose
 
 import android.os.Bundle
 import androidx.activity.ComponentActivity
@@ -34,9 +34,9 @@ import androidx.compose.ui.text.input.PasswordVisualTransformation
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
-import dev.akexorcist.adaptivescrolling.compose.AdaptiveScrollContainer
-import dev.akexorcist.adaptivescrollingui.R
-import dev.akexorcist.adaptivescrollingui.ui.theme.AdaptiveScrollingUiTheme
+import com.akexorcist.adaptivescrolling.compose.AdaptiveScrollContainer
+import com.akexorcist.adaptivescrollingui.R
+import com.akexorcist.adaptivescrollingui.ui.theme.AdaptiveScrollingUiTheme
 
 class ComposeSimpleActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {

@@ -5,7 +5,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical">
 
-    <dev.akexorcist.adaptivescrolling.view.AdaptiveVerticalScrollLayout
+    <com.akexorcist.adaptivescrolling.view.AdaptiveVerticalScrollLayout
         android:id="@+id/adaptive_scroll"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -88,7 +88,7 @@
                 android:text="@string/simple_login" />
         </LinearLayout>
 
-    </dev.akexorcist.adaptivescrolling.view.AdaptiveVerticalScrollLayout>
+    </com.akexorcist.adaptivescrolling.view.AdaptiveVerticalScrollLayout>
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/button_back"

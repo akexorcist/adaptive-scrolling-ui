@@ -1,4 +1,4 @@
-package dev.akexorcist.adaptivescrollingui.ui.main
+package com.akexorcist.adaptivescrollingui.ui.main
 
 import android.content.Intent
 import androidx.activity.compose.LocalActivity
@@ -19,14 +19,14 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
-import dev.akexorcist.adaptivescrolling.compose.AdaptiveScrollContainer
-import dev.akexorcist.adaptivescrollingui.ui.compose.ComposeSimpleActivity
-import dev.akexorcist.adaptivescrollingui.ui.compose.ComposeStickyFooterActivity
-import dev.akexorcist.adaptivescrollingui.ui.compose.ComposeVerticalWeightActivity
-import dev.akexorcist.adaptivescrollingui.ui.theme.AdaptiveScrollingUiTheme
-import dev.akexorcist.adaptivescrollingui.ui.view.ViewSimpleActivity
-import dev.akexorcist.adaptivescrollingui.ui.view.ViewStickyFooterActivity
-import dev.akexorcist.adaptivescrollingui.ui.view.ViewVerticalWeightActivity
+import com.akexorcist.adaptivescrolling.compose.AdaptiveScrollContainer
+import com.akexorcist.adaptivescrollingui.ui.compose.ComposeSimpleActivity
+import com.akexorcist.adaptivescrollingui.ui.compose.ComposeStickyFooterActivity
+import com.akexorcist.adaptivescrollingui.ui.compose.ComposeVerticalWeightActivity
+import com.akexorcist.adaptivescrollingui.ui.theme.AdaptiveScrollingUiTheme
+import com.akexorcist.adaptivescrollingui.ui.view.ViewSimpleActivity
+import com.akexorcist.adaptivescrollingui.ui.view.ViewStickyFooterActivity
+import com.akexorcist.adaptivescrollingui.ui.view.ViewVerticalWeightActivity
 
 private val buttonWidth = 200.dp
 
