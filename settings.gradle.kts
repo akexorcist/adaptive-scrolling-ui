@@ -23,6 +23,6 @@ dependencyResolutionManagement {
 }
 
 rootProject.name = "Adaptive Scrolling UI"
-include(":app")
+include(":demo")
 include(":compose")
 include(":view")
