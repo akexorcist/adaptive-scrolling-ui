@@ -49,8 +49,6 @@ adaptiveVerticalScrollLayout.setOnScrollableStateChangeListener { isScrollable -
 
 ## Usage
 
-### XML
-
 ```xml
 <com.akexorcist.adaptivescrolling.view.AdaptiveVerticalScrollLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
