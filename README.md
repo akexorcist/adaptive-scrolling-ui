@@ -7,6 +7,8 @@
 
 Adaptive scrolling behavior that automatically adjusts based on content size. The layout will not be scrollable if the content's height is less than or equal to the container's height.
 
+![Demo](images/image_001.gif)
+
 ## Usage
 
 ### Compose
