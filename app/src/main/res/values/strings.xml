@@ -1,0 +1,35 @@
+<resources>
+    <string name="app_name">Adaptive Scrolling UI</string>
+    <string name="content_description_back_button">Back</string>
+
+    <string name="simple_title">Sign In</string>
+    <string name="simple_email_hint">Email</string>
+    <string name="simple_password_hint">Password</string>
+    <string name="simple_forget_password">Forgot Password?</string>
+    <string name="simple_login">Login</string>
+    <string name="simple_sign_up">Sign Up</string>
+
+    <string name="vertical_weight_title">Enter PIN</string>
+    <string name="vertical_weight_delete">DEL</string>
+
+    <string name="sticky_footer_username">Android Developer</string>
+    <string name="sticky_footer_email">android.dev@example.com</string>
+    <string name="sticky_footer_short_description">A short description about the user goes here. It can be a couple of lines long.</string>
+    <string name="sticky_footer_location">Bangkok, Thailand</string>
+    <string name="sticky_footer_website">example.com</string>
+    <string name="sticky_footer_joined_date">Joined on May 2024</string>
+    <string name="sticky_footer_followers_count">1,234</string>
+    <string name="sticky_footer_followers_label">Followers</string>
+    <string name="sticky_footer_following_count">567</string>
+    <string name="sticky_footer_following_label">Following</string>
+    <string name="sticky_footer_repositories_label">Repositories</string>
+    <string name="sticky_footer_repositories_project_name_1">awesome-project</string>
+    <string name="sticky_footer_repositories_project_description_1">An awesome project that does awesome things.</string>
+    <string name="sticky_footer_repositories_project_star_1">1,234</string>
+    <string name="sticky_footer_repositories_project_language_1">Kotlin</string>
+    <string name="sticky_footer_repositories_project_name_2">another-project</string>
+    <string name="sticky_footer_repositories_project_description_2">Another project that does other things.</string>
+    <string name="sticky_footer_repositories_project_star_2">567</string>
+    <string name="sticky_footer_repositories_project_language_2">Java</string>
+    <string name="sticky_footer_logout">Log Out</string>
+</resources>
