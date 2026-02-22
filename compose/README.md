@@ -1,4 +1,4 @@
-# AdaptiveScrollContainer
+# AdaptiveVerticalScrollContainer
 
 A Jetpack Compose container that conditionally applies vertical scrolling to its content only when the content's height exceeds the container's available height. It also provides the scrollable state to its content, allowing for adaptive UI adjustments.
 
@@ -11,7 +11,7 @@ A Jetpack Compose container that conditionally applies vertical scrolling to its
 
 | Method                                                                  | Description                                             |
 |-------------------------------------------------------------------------|---------------------------------------------------------|
-| `AdaptiveScrollContainer`                                               | The main composable function for the container.         |
+| `AdaptiveVerticalScrollContainer`                                               | The main composable function for the container.         |
 
 ### Parameters
 
@@ -33,7 +33,7 @@ A Jetpack Compose container that conditionally applies vertical scrolling to its
 ```kotlin
 @Composable
 fun MyScreen() {
-    AdaptiveScrollContainer(
+    AdaptiveVerticalScrollContainer(
         modifier = Modifier.fillMaxSize(),
     ) { isScrollable ->
         Column(

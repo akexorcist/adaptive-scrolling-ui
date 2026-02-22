@@ -31,7 +31,7 @@ import androidx.compose.ui.Modifier
  * @param content The content of the layout. The `isScrollable` parameter is a boolean that indicates whether the content is scrollable or not.
  */
 @Composable
-fun AdaptiveScrollContainer(
+fun AdaptiveVerticalScrollContainer(
     modifier: Modifier = Modifier,
     scrollState: ScrollState = rememberScrollState(),
     scrollEnabled: Boolean = true,

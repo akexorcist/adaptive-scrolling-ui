@@ -21,8 +21,8 @@ implementation("com.akexorcist.adaptivescrolling:compose:1.0.0")
 
 ```kotlin
 @Composable
-fun AdaptiveScrollContainerExample() {
-    AdaptiveScrollContainer { isScrollable ->
+fun AdaptiveVerticalScrollContainerExample() {
+    AdaptiveVerticalScrollContainer { isScrollable ->
         // Your content here
     }
 }

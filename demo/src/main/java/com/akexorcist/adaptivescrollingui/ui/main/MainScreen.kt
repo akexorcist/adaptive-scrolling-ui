@@ -19,7 +19,7 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
-import com.akexorcist.adaptivescrolling.compose.AdaptiveScrollContainer
+import com.akexorcist.adaptivescrolling.compose.AdaptiveVerticalScrollContainer
 import com.akexorcist.adaptivescrollingui.ui.compose.ComposeSimpleActivity
 import com.akexorcist.adaptivescrollingui.ui.compose.ComposeStickyFooterActivity
 import com.akexorcist.adaptivescrollingui.ui.compose.ComposeVerticalWeightActivity
@@ -68,7 +68,7 @@ fun MainScreen(
     navigateToViewVerticalWeight: () -> Unit,
     navigateToViewStickyFooter: () -> Unit,
 ) {
-    AdaptiveScrollContainer(
+    AdaptiveVerticalScrollContainer(
         modifier = Modifier.fillMaxSize()
     ) {
         Column(

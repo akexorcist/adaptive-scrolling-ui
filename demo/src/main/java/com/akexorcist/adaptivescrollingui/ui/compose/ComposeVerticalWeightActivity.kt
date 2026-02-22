@@ -34,7 +34,7 @@ import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
-import com.akexorcist.adaptivescrolling.compose.AdaptiveScrollContainer
+import com.akexorcist.adaptivescrolling.compose.AdaptiveVerticalScrollContainer
 import com.akexorcist.adaptivescrollingui.R
 import com.akexorcist.adaptivescrollingui.ui.theme.AdaptiveScrollingUiTheme
 
@@ -73,7 +73,7 @@ private fun VerticalWeightScreen(
             .fillMaxSize()
             .background(MaterialTheme.colorScheme.background)
     ) {
-        AdaptiveScrollContainer(
+        AdaptiveVerticalScrollContainer(
             modifier = Modifier.fillMaxSize(),
             horizontalAlignment = Alignment.CenterHorizontally
         ) { isScrollable ->
