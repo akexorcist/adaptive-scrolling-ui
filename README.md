@@ -16,7 +16,7 @@ Adaptive scrolling behavior that automatically adjusts based on content size. Th
 Adaptive scrolling container for Jetpack Compose.
 
 ```kotlin
-implementation("com.akexorcist.adaptivescrolling:compose:1.0.0")
+implementation("com.akexorcist.adaptivescrolling:compose:1.1.0")
 ```
 
 ```kotlin
@@ -35,7 +35,7 @@ See more detail in [Adaptive Scrolling - Compose](compose/README.md)
 Adaptive scrolling layout for Android Views.
 
 ```kotlin
-implementation("com.akexorcist.adaptivescrolling:view:1.0.0")
+implementation("com.akexorcist.adaptivescrolling:view:1.1.0)
 ```
 
 ```xml

@@ -42,10 +42,10 @@ kotlin {
 dependencies {
     debugImplementation(project(":compose"))
     //noinspection UseTomlInstead
-    releaseImplementation("com.akexorcist.adaptivescrolling:compose:1.0.0-alpha01")
+    releaseImplementation("com.akexorcist.adaptivescrolling:compose:1.1.0")
     debugImplementation(project(":view"))
     //noinspection UseTomlInstead
-    releaseImplementation("com.akexorcist.adaptivescrolling:view:1.0.0-alpha01")
+    releaseImplementation("com.akexorcist.adaptivescrolling:view:1.1.0")
     implementation(libs.androidx.core)
     implementation(libs.androidx.lifecycle.runtime)
     implementation(libs.appcompat)
