@@ -8,10 +8,11 @@ import androidx.compose.foundation.layout.ColumnScope
 import androidx.compose.foundation.rememberScrollState
 import androidx.compose.foundation.verticalScroll
 import androidx.compose.runtime.Composable
+import androidx.compose.runtime.derivedStateOf
+import androidx.compose.runtime.getValue
+import androidx.compose.runtime.remember
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
-import androidx.compose.ui.layout.SubcomposeLayout
-import androidx.compose.ui.unit.Constraints
 
 /**
  * A container that scrolls its content vertically when the content's height exceeds the container's height.
@@ -40,32 +41,20 @@ fun AdaptiveScrollContainer(
     horizontalAlignment: Alignment.Horizontal = Alignment.Start,
     content: @Composable ColumnScope.(isScrollable: Boolean) -> Unit,
 ) {
-    SubcomposeLayout(modifier = modifier) { constraints ->
-        val contentConstraints = constraints.copy(maxHeight = Constraints.Infinity)
-        val nonScrollableContent = subcompose("content") { Column { content(false) } }[0].measure(contentConstraints)
-        val contentHeight = nonScrollableContent.height
-        val isScrollable = contentHeight > constraints.maxHeight
-        val finalContentPlaceable = subcompose("finalContent") {
-            val scrollModifier = if (isScrollable && scrollEnabled) {
-                Modifier.verticalScroll(
-                    state = scrollState,
-                    enabled = true,
-                    flingBehavior = flingBehavior,
-                    reverseScrolling = reverseScrolling,
-                )
-            } else {
-                Modifier
-            }
-            Column(
-                modifier = scrollModifier,
-                verticalArrangement = verticalArrangement,
-                horizontalAlignment = horizontalAlignment,
-            ) {
-                content(isScrollable)
-            }
-        }[0].measure(constraints)
-        layout(finalContentPlaceable.width, finalContentPlaceable.height) {
-            finalContentPlaceable.place(0, 0)
-        }
+    val isScrollable by remember {
+        derivedStateOf { scrollState.maxValue > 0 }
+    }
+    Column(
+        modifier = modifier
+            .verticalScroll(
+                state = scrollState,
+                enabled = true,
+                flingBehavior = flingBehavior,
+                reverseScrolling = reverseScrolling,
+            ),
+        verticalArrangement = verticalArrangement,
+        horizontalAlignment = horizontalAlignment,
+    ) {
+        content(isScrollable)
     }
 }
