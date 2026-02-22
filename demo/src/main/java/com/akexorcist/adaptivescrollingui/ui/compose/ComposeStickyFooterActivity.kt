@@ -76,7 +76,7 @@ private fun StickyFooterScreen(
     ) {
         AdaptiveScrollContainer(
             modifier = Modifier.fillMaxSize()
-        ) { _ ->
+        ) { isScrollable ->
             Spacer(modifier = Modifier.height(32.dp))
             Column(
                 modifier = Modifier
@@ -144,32 +144,12 @@ private fun StickyFooterScreen(
                     label = stringResource(R.string.sticky_footer_following_label)
                 )
             }
-            Column(
-                modifier = Modifier
-                    .padding(32.dp)
-                    .fillMaxWidth(),
-            ) {
-                Text(
-                    text = stringResource(R.string.sticky_footer_repositories_label),
-                    fontSize = 18.sp,
-                    fontWeight = FontWeight.Bold
+            Spacer(
+                modifier = Modifier.height(
+                    if (isScrollable) 96.dp
+                    else 64.dp
                 )
-                Spacer(modifier = Modifier.height(16.dp))
-                Repository(
-                    name = stringResource(R.string.sticky_footer_repositories_project_name_1),
-                    description = stringResource(R.string.sticky_footer_repositories_project_description_1),
-                    star = stringResource(R.string.sticky_footer_repositories_project_star_1),
-                    language = stringResource(R.string.sticky_footer_repositories_project_language_1)
-                )
-                Spacer(modifier = Modifier.height(16.dp))
-                Repository(
-                    name = stringResource(R.string.sticky_footer_repositories_project_name_2),
-                    description = stringResource(R.string.sticky_footer_repositories_project_description_2),
-                    star = stringResource(R.string.sticky_footer_repositories_project_star_2),
-                    language = stringResource(R.string.sticky_footer_repositories_project_language_2)
-                )
-                Spacer(modifier = Modifier.height(64.dp))
-            }
+            )
         }
         Box(
             modifier = Modifier
@@ -240,45 +220,6 @@ private fun Follower(
         Text(text = label)
     }
 }
-
-@Composable
-private fun Repository(
-    name: String,
-    description: String,
-    star: String,
-    language: String,
-) {
-    Column {
-        Row(verticalAlignment = Alignment.CenterVertically) {
-            Icon(
-                modifier = Modifier.size(24.dp),
-                painter = painterResource(R.drawable.ic_repository),
-                contentDescription = name
-            )
-            Spacer(modifier = Modifier.width(8.dp))
-            Text(
-                text = name,
-                fontWeight = FontWeight.Bold,
-                color = MaterialTheme.colorScheme.primary,
-            )
-        }
-        Spacer(modifier = Modifier.height(4.dp))
-        Text(text = description)
-        Spacer(modifier = Modifier.height(8.dp))
-        Row(verticalAlignment = Alignment.CenterVertically) {
-            Icon(
-                modifier = Modifier.size(16.dp),
-                painter = painterResource(R.drawable.ic_star),
-                contentDescription = null,
-            )
-            Spacer(modifier = Modifier.width(4.dp))
-            Text(text = star)
-            Spacer(modifier = Modifier.width(16.dp))
-            Text(text = language)
-        }
-    }
-}
-
 
 @Preview
 @Composable
